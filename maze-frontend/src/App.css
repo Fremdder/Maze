@@ -1,38 +1,68 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display:flex;
+  align-items:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  /* background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); */
+  /* background: linear-gradient(135deg, #261d27 25%, transparent 25%) -32px 0, linear-gradient(225deg, #261d27 25%, transparent 25%) -32px 0, linear-gradient(315deg, #261d27 25%, transparent 25%), linear-gradient(45deg, #261d27 25%, transparent 25%);
+background-size: 64px 64px;
+background-color: #9bd9ec; */
+background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+/* background: rgba(255,255,255,0.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.25); */
 }
-
-.App-link {
-  color: #61dafb;
+.auth-form-container, .login-form, .register-form{
+  display:flex;
+  flex-direction:column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-form-container{
+  padding:0rem 3rem 3rem 3rem;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 20px;
+}
+label{
+  text-align: left;
+  padding: 0.125rem 0.25rem;
+}
+input{
+  padding-top:0px;
+  margin:1rem 0.5rem;
+  height:30px;
+  width:300px;
+}
+.submit{
+margin-top: 10px;
+height:35px;
+background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+color:white;
+font-size: 20px;
+border:1px solid white;
+border-radius:8px;
+}
+.submit:hover{
+cursor:pointer;
+background-image: 0B60B0;
+}
+.switch:hover{
+  cursor:pointer;
+background-color: white;
+color:black;
+transition: background-color 1s;
+font-weight: 600;
+}
+.switch{
+margin-top: 20px;
+background-color: black;
+color:white;
+border:1px solid black;
+padding:4px 8px;
+font-size: 12px;
+border-radius:5px;
+}
+h1{
+  text-decoration:underline;
 }
